@@ -101,7 +101,7 @@ $ emacs tests/filename.js
 Running Tests
 --------------
 
-To run the test is necessary to verify that the Selenium server is running, we suggest to use two tabs on terminal.
+To run the testlocally  is necessary to verify that the Selenium server is running, we suggest to use two tabs on terminal.
 
 Tab # 1:
 
