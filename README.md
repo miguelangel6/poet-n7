@@ -60,7 +60,9 @@ Configuration files
 We recommend to create different files of configuration so we can run a lot of tests with differents capabilities easier. Access to the nightwatch folder and create a new folder to save this configuration files
 
 $ cd /folder/for/the/project/nightwatch
+
 $ mkdir settings
+
 $ cd /settings
 
 In this location we will save all the configuration files that we want, in the following links you can see five differents files to make test in OS X, Windows, ios, android and locally.
@@ -71,6 +73,9 @@ In this location we will save all the configuration files that we want, in the f
 - https://temas.s3.amazonaws.com/POET/Settings/browserstack_iphone.json
 - https://temas.s3.amazonaws.com/POET/Settings/browserstack_android.json
 
+To view all the capabilities that can be configured in this last section using BrowserStack, please access the following link.
+
+- https://www.browserstack.com/automate/capabilities
 
 Tests
 --------------
@@ -82,6 +87,10 @@ The test below navigates to google.com and searches for "rembrandt van rijn"
 The test below navegates to a ogame.es, in this case you will see how to select an option from a dropdown list and authenticate in the site.
 
 - https://temas.s3.amazonaws.com/POET/Nightwatch/test2.js
+
+In the following link we will see how to login in a Moodle platform.
+
+- https://temas.s3.amazonaws.com/POET/Nightwatch/test3.js
 
 The tests should be created in the folder /folder/for/the/project/nightwatch/tests. We recommend to copy the text in the links and create the file in the folder.
 
@@ -102,60 +111,16 @@ Tab # 2: - Test -
 
 $ cd /folder/for/the/project/nightwatch
 
-$ nightwatch --test/filename.js
+$ nightwatch -t tests/test3.js -c settings/local.json
 
 Running Tests - Browser Stack
 --------------
 
-To run the test in BrowserStack you need to change the settings of the file created before (nightwatch.json). Particularly the "test_settings" section.
-
-"test_settings" : {
-
-    "default" : {
-    
-      "launch_url" : "http://hub.browserstack.com",
-      
-      "selenium_port"  : 80,
-      
-      "selenium_host"  : "hub.browserstack.com",
-      
-      "silent": true,
-      
-      "screenshots" : {
-      
-        "enabled" : true,
-        
-        "path" : "/tmp"
-        
-      },
-      
-      "desiredCapabilities": {
-      
-        "browserName": "firefox",
-        
-        "javascriptEnabled": true,
-        
-    	"os" : " ",
-    	
-    	"os_version" : " ",
-    	
-    	"resolution" : " ",
-    	
-        "acceptSslCerts": true,
-        
-        "browserstack.user": " ",
-        
-        "browserstack.key": " "
-        
-      }
-      
-    }
-    
-  }
+To run the test in BrowserStack we just need to use another configuration file in the moment we run the tests.
  
-To view all the capabilities that can be configured in this last section using BrowserStack, please access the following link.
+$ cd /folder/for/the/project/nightwatch
 
-- https://www.browserstack.com/automate/capabilities
+$ nightwatch -t tests/test3.js -c settings/browserstack_mac.json
 
 Remember that you need and account in Browser Stack and fill the fields of "browserstack.user" & "browserstack.key" with the respective account information.
 
