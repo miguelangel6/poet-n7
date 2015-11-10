@@ -54,12 +54,22 @@ $ cd nightwatch/
 
 $ sudo npm install -g nightwatch
 
-Configuration File
+Configuration files
 --------------
 
-It is recommended to create the file nightwatch.json to set the configuration, this must be created in the project's root folder. In the following link you can download this file.
+We recommend to create different files of configuration so we can run a lot of tests with differents capabilities easier. Access to the nightwatch folder and create a new folder to save this configuration files
 
-- https://temas.s3.amazonaws.com/POET/Nightwatch/nightwatch.json
+$ cd /folder/for/the/project/nightwatch
+$ mkdir settings
+$ cd /settings
+
+In this location we will save all the configuration files that we want, in the following links you can see five differents files to make test in OS X, Windows, ios, android and locally.
+
+- https://temas.s3.amazonaws.com/POET/Settings/local.json
+- https://temas.s3.amazonaws.com/POET/Settings/browserstack_mac.json
+- https://temas.s3.amazonaws.com/POET/Settings/browserstack_windows.json
+
+
 
 Tests
 --------------
