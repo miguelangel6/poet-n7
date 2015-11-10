@@ -68,7 +68,8 @@ In this location we will save all the configuration files that we want, in the f
 - https://temas.s3.amazonaws.com/POET/Settings/local.json
 - https://temas.s3.amazonaws.com/POET/Settings/browserstack_mac.json
 - https://temas.s3.amazonaws.com/POET/Settings/browserstack_windows.json
-
+- https://temas.s3.amazonaws.com/POET/Settings/browserstack_iphone.json
+- https://temas.s3.amazonaws.com/POET/Settings/browserstack_android.json
 
 
 Tests
