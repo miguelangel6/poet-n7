@@ -98,7 +98,7 @@ $ cd /folder/for/the/project/nightwatch
 
 $ emacs tests/filename.js
 
-Running Tests
+Running Tests - Locally
 --------------
 
 To run the test locally  is necessary to verify that the Selenium server is running, we suggest to use two tabs on terminal.
