@@ -77,7 +77,7 @@ To view all the capabilities that can be configured in this last section using B
 
 - https://www.browserstack.com/automate/capabilities
 
-Tests
+Examples
 --------------
 
 The test below navigates to google.com and searches for "rembrandt van rijn"
